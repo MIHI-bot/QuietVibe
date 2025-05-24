@@ -1,0 +1,47 @@
+/* below for loading Leftside bar */
+.skeleton-loader {
+    height: 1700px;
+    margin: 0 220px 0 0;
+  }
+  .skeleton-loader:after {
+    content: '';
+    display: block;
+      width: 220px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( 90deg, rgba(29, 32, 37, 0), rgba(29, 32, 37, 0.8) 50%, rgba(29, 32, 37, 0) 100% ), 
+        linear-gradient(#2a303c 50.9954px, transparent 0), 
+        linear-gradient(#2a303c 52.990700000000004px, transparent 0), 
+        linear-gradient(#2a303c 50.990700000000004px, transparent 0), 
+        linear-gradient(#2a303c 45.993100000000005px, transparent 0), 
+        linear-gradient(#2a303c 52.9978px, transparent 0), 
+        linear-gradient(#2a303c 50.9908px, transparent 0), 
+        linear-gradient(#2a303c 49.990700000000004px, transparent 0), 
+      linear-gradient(#1d2025 100%, transparent 0);
+    background-size: 100px 100%, 173px 50.9954px, 173px 52.990700000000004px, 173px 50.990700000000004px, 173px 45.993100000000005px, 173px 52.9978px, 173px 50.9908px, 173px 49.990700000000004px, 100% 100%;
+    background-position: 0 0 , 16px 68.2852809px, 16px 144.381px, 16px 223.41830000000002px, 16.004px 606.674px, 16px 300.1982px, 16px 379.1902px, 16px 457.2363px, 0 0;
+    animation: skeleton-animation 900ms infinite;
+  }
+  
+  @keyframes skeleton-animation {
+    to {
+      background-position: 100% 0, 16px 68.2852809px, 16px 144.381px, 16px 223.41830000000002px, 16.004px 606.674px, 16px 300.1982px, 16px 379.1902px, 16px 457.2363px, 0 0;
+    }
+  }
+  
+@media (min-width: 769px) {
+  .skeleton-loader {
+    display: block;
+  }
+}
+
+/* Hide on smartphones and smaller tablets (≤768px) */
+@media (max-width: 768px) {
+  .skeleton-loader {
+    display: none;
+  }
+}
+  

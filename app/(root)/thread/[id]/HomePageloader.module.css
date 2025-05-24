@@ -1,0 +1,153 @@
+/* just skeleton loader */
+  .skeleton-loader {    
+    height: 140px;
+    width: 1000px
+  }
+  .skeleton-loader:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( 90deg, rgba(31, 36, 45, 0), rgba(31, 36, 45, 0.8) 50%, rgba(31, 36, 45, 0) 100% ), 
+    radial-gradient( circle 27.99765px at 27.99765px 27.99765px, #2a303c 100%, transparent 0 ), 
+    linear-gradient(#2a303c 16px, transparent 0), 
+    linear-gradient(#2a303c 16px, transparent 0), 
+    linear-gradient(#2a303c 16px, transparent 0), 
+    radial-gradient( circle 11.99655px at 11.99655px 11.99655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+      linear-gradient(#1f242d 100%, transparent 0);
+      background-size: 400px 100%, 55.9953px 55.9953px, 128px 16px, 445.993px 16px, 445.996px 16px, 23.9931px 23.9931px, 22.9931px 22.9931px, 22.9931px 22.9931px, 22.9931px 22.9931px, 100% 100%;
+    background-position: 0 0 , 25.0047px 24.0047px, 102px 24px, 102px 56px, 102px 79.9977px, 102px 114px, 137px 115.0069px, 170.9838085px 115.0069px, 204.9768372px 115px, 0 0;
+    animation: skeleton-animation 2000ms infinite;
+}
+
+  @keyframes skeleton-animation {
+    to {
+      background-position: 100% 0, 25.0047px 24.0047px, 102px 24px, 102px 56px, 102px 79.9977px, 102px 114px, 137px 115.0069px, 170.9838085px 115.0069px, 204.9768372px 115px, 0 0;
+    }
+  }
+  
+
+
+
+/* skeleton loader -1 */
+.skeleton-loader-1 {    
+  height: 140px;
+  width: 1000px
+}
+  .skeleton-loader-1:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 170px;
+  position: absolute;
+  left: 0;
+  top: 260px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( 90deg, rgba(31, 36, 45, 0), rgba(31, 36, 45, 0.8) 50%, rgba(31, 36, 45, 0) 100% ), 
+  radial-gradient( circle 27.99765px at 27.99765px 27.99765px, #2a303c 100%, transparent 0 ), 
+  linear-gradient(#2a303c 16px, transparent 0), 
+  linear-gradient(#2a303c 16px, transparent 0), 
+  linear-gradient(#2a303c 16px, transparent 0), 
+  radial-gradient( circle 11.99655px at 11.99655px 11.99655px, #2a303c 100%, transparent 0 ), 
+  radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+  radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+  radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+  linear-gradient(#1f242d 100%, transparent 0);
+  background-size: 400px 100%, 55.9953px 55.9953px, 128px 16px, 445.993px 16px, 445.996px 16px, 23.9931px 23.9931px, 22.9931px 22.9931px, 22.9931px 22.9931px, 22.9931px 22.9931px, 100% 100%;
+  background-position: 0 0 , 25.0047px 24.0047px, 102px 24px, 102px 56px, 102px 79.9977px, 102px 114px, 137px 115.0069px, 170.9838085px 115.0069px, 204.9768372px 115px, 0 0;
+  animation: skeleton-animation-1 2000ms infinite;
+}
+
+@keyframes skeleton-animation-1 {
+  to {
+      background-position: 100% 0, 25.0047px 24.0047px, 102px 24px, 102px 56px, 102px 79.9977px, 102px 114px, 137px 115.0069px, 170.9838085px 115.0069px, 204.9768372px 115px, 0 0;
+  }
+}
+
+
+
+/* skeleton loader 2 */
+.skeleton-loader-2 {    
+    height: 140px;
+    width: 1000px
+}
+  .skeleton-loader-2:after {
+      content: '';
+    display: block;
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: 430px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( 90deg, rgba(31, 36, 45, 0), rgba(31, 36, 45, 0.8) 50%, rgba(31, 36, 45, 0) 100% ), 
+        radial-gradient( circle 27.99765px at 27.99765px 27.99765px, #2a303c 100%, transparent 0 ), 
+        linear-gradient(#2a303c 16px, transparent 0), 
+        linear-gradient(#2a303c 16px, transparent 0), 
+        linear-gradient(#2a303c 16px, transparent 0), 
+        radial-gradient( circle 11.99655px at 11.99655px 11.99655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+        linear-gradient(#1f242d 100%, transparent 0);
+        background-size: 400px 100%, 55.9953px 55.9953px, 128px 16px, 445.993px 16px, 445.996px 16px, 23.9931px 23.9931px, 22.9931px 22.9931px, 22.9931px 22.9931px, 22.9931px 22.9931px, 100% 100%;
+        background-position: 0 0 , 25.0047px 24.0047px, 102px 24px, 102px 56px, 102px 79.9977px, 102px 114px, 137px 115.0069px, 170.9838085px 115.0069px, 204.9768372px 115px, 0 0;
+        animation: skeleton-animation-2 2000ms infinite;
+    }
+  
+  @keyframes skeleton-animation-2 {
+    to {
+      background-position: 100% 0, 25.0047px 24.0047px, 102px 24px, 102px 56px, 102px 79.9977px, 102px 114px, 137px 115.0069px, 170.9838085px 115.0069px, 204.9768372px 115px, 0 0;
+    }
+  }
+  
+  
+
+  
+
+/* skeleton loader 3 */
+.skeleton-loader-3 {    
+    height: 140px;
+    width: 1000px
+  }
+.skeleton-loader-3:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: 600px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( 90deg, rgba(31, 36, 45, 0), rgba(31, 36, 45, 0.8) 50%, rgba(31, 36, 45, 0) 100% ), 
+        radial-gradient( circle 27.99765px at 27.99765px 27.99765px, #2a303c 100%, transparent 0 ), 
+        linear-gradient(#2a303c 16px, transparent 0), 
+        linear-gradient(#2a303c 16px, transparent 0), 
+        linear-gradient(#2a303c 16px, transparent 0), 
+        radial-gradient( circle 11.99655px at 11.99655px 11.99655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+        radial-gradient( circle 11.49655px at 11.49655px 11.49655px, #2a303c 100%, transparent 0 ), 
+      linear-gradient(#1f242d 100%, transparent 0);
+    background-size: 400px 100%, 55.9953px 55.9953px, 128px 16px, 445.993px 16px, 445.996px 16px, 23.9931px 23.9931px, 22.9931px 22.9931px, 22.9931px 22.9931px, 22.9931px 22.9931px, 100% 100%;
+    background-position: 0 0 , 25.0047px 24.0047px, 102px 24px, 102px 56px, 102px 79.9977px, 102px 114px, 137px 115.0069px, 170.9838085px 115.0069px, 204.9768372px 115px, 0 0;
+    animation: skeleton-animation-3 2000ms infinite;
+  }
+  
+@keyframes skeleton-animation-3 {
+    to {
+      background-position: 100% 0, 25.0047px 24.0047px, 102px 24px, 102px 56px, 102px 79.9977px, 102px 114px, 137px 115.0069px, 170.9838085px 115.0069px, 204.9768372px 115px, 0 0;
+    }
+  }
+  
