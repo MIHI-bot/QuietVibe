@@ -9,42 +9,48 @@ import UserCard from '@/components/cards/UserCard';
 import Searchbar from '@/components/shared/Searchbar';
 
 // async function Page({ params }: { params: { id: string } }) {
-async function Page({ params }: { params: Promise<{ id: string }> }) {
-  const user = await currentUser();
-  const resolvedParams = await params; // Await the params
+// async function Page({ params }: { params: Promise<{ id: string }> }) {
+//   const user = await currentUser();
+//   const resolvedParams = await params; // Await the params
   
-    if (!user) return null;
+//     if (!user) return null;
+
+//   const userInfo = await fetchUser(user.id);
+  
+//   if (!userInfo?.onboarded) redirect('/onboarding');
+
+//   const result = await fetchUsers({
+//     userId: user.id,
+//     searchString: searchParams.q,
+//     pageNumber: searchParams?.page ? +searchParams.page : 1,
+//     pageSize: 25,
+//   });
+
+async function Page({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | undefined };
+}) {
+  const user = await currentUser();
+  if (!user) return null;
 
   const userInfo = await fetchUser(user.id);
-  
-  
-    // const userInfo = await fetchUser(params.id);
-    // if (!userInfo?.onboarded) redirect('/onboarding');
-    
-    
-    //Rubbish but useful code below dotn delete it !
-    // console.log(resolvedParams);
-    // console.log("This was above resolved Params")
-    // const userInfo = await fetchUser(resolvedParams.id);
-  if (!userInfo?.onboarded) redirect('/onboarding');
-  // if (!user) redirect('/onboarding');
+  if (!userInfo?.onboarded) redirect("/onboarding");
 
-
-  
   const result = await fetchUsers({
     userId: user.id,
-    searchString: "",
-    pageNumber: 1,
+    searchString: searchParams.q,
+    pageNumber: searchParams?.page ? +searchParams.page : 1,
     pageSize: 25,
   });
 
   return (
-  <>
+
     <section>
       <h1 className="head-text mb-10">Search</h1>
             <Searchbar routeType='search' />
 
-      <div className="mt-14 flex flex-col gap-9">
+      <div className="mt-14 flex flex-col gap-3">
           {result.users.length === 0 ? (
             <p className="no-result">No Result</p>
           )
@@ -64,7 +70,7 @@ async function Page({ params }: { params: Promise<{ id: string }> }) {
 
       </div>
     </section>
-  </>
+
   );
 }
 

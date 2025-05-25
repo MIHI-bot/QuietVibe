@@ -19,12 +19,13 @@ export default async function Home() {
     const userInfo = await fetchUser(user.id);
     if (!userInfo?.onboarded) redirect("/onboarding");
     
-  // console.debug("-----------This is from Page.tsx in (root)", userInfo);
   return (
     <>
     <div className="flex flex-row justify-between">
 
-        <span style={{ fontSize: '2em' }} className="text-left text-gray-300 font-medium display-inline ">Welcome {userInfo.name} !</span>
+        <span style={{ fontSize: '28px' }} className="text-left text-gray-300 display-inline ">
+ Welcome {userInfo.name?.split(' ')[0] || 'User'} !
+          </span>
   
           <ProfileImage image={userInfo.image} />
 
