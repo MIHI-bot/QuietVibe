@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { Input } from "../ui/input";
-import Loading from "@/app/loading";
 
 interface Props {
   routeType: string;
@@ -19,9 +18,7 @@ function Searchbar({ routeType }: Props) {
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       if (search) {
-        <Loading/>
         router.push(`/${routeType}?q=` + search);
-
       } else {
         router.push(`/${routeType}`);
       }
@@ -44,7 +41,7 @@ function Searchbar({ routeType }: Props) {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder={`${
-          routeType !== "/search" ? "Search communities" : "Search creators"
+          routeType !== "search" ? "Search communities" : "Search creators"
         }`}
         className='no-focus searchbar_input'
       />

@@ -31,6 +31,7 @@ interface Props {
     time: string;
     // communityId: string;
     createdAt: string;
+    likeCount:number;
   };
   btnTitle: string;
 }
@@ -45,6 +46,7 @@ function PostThread({ userId }: { userId: string }) {
     defaultValues: {
       thread: "",
       accountId: userId,
+      likeCount:0
     },
   });
 

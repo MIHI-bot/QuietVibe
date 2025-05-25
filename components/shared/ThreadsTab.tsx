@@ -10,6 +10,7 @@ interface Result {
   image: string;
   id: string;
   threads: {
+    likeCount: number;
     _id: string;
     text: string;
     parentId: string | null;
@@ -76,6 +77,7 @@ async function ThreadsTab({ currentUserId, accountId, accountType }: Props) {
           }
           createdAt={thread.createdAt}
           comments={thread.children}
+          likeCount={thread.likeCount}
         />
       ))}
     </section>

@@ -5,6 +5,7 @@ import styles from './HomePageloader.module.css';
 import { fetchUser } from "@/lib/actions/user.action";
 import { fetchThreadById } from "@/lib/actions/thread.actions";
 import { redirect } from "next/navigation";
+import { Children } from "react";
 
 export const revalidate = 0;
 
@@ -45,6 +46,7 @@ async function page({ params }: { params: Promise<{ id: string }> }) {
             community={thread.community}
             createdAt={new Date(thread.createdAt).toLocaleString()}
             comments={thread.children}
+            likeCount={thread.likeCount}
           />
         </div>
 
@@ -69,6 +71,7 @@ async function page({ params }: { params: Promise<{ id: string }> }) {
               createdAt={new Date(childItem.createdAt).toLocaleString()}
               comments={childItem.children}
               isComment
+              likeCount={childItem.likeCount}
             />
           ))}
         </div>

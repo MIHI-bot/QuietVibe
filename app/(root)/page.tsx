@@ -23,12 +23,10 @@ export default async function Home() {
     <>
     <div className="flex flex-row justify-between">
 
-        <span style={{ fontSize: '28px' }} className="text-left text-gray-300 display-inline ">
+        <span style={{ fontSize: '30px' }} className="text-left text-gray-300 display-inline ">
  Welcome {userInfo.name?.split(' ')[0] || 'User'} !
           </span>
   
-          <ProfileImage image={userInfo.image} />
-
           </div>
       <section className="mt-9 flex flex-col gap-5">
         {result.posts.length === 0 ? (
@@ -46,6 +44,7 @@ export default async function Home() {
                 community={post.community}
                 createdAt={post.createdAt.toLocaleString().replace(/,/, "")}
                 comments={post.children}
+                likeCount={post.likeCount}
               />
             ))}
           </>

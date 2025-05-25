@@ -9,6 +9,7 @@ import ProfileHeader from "@/components/shared/ProfileHeader";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { fetchUser } from "@/lib/actions/user.action";
+import Link from "next/link";
 
 async function Page({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
@@ -27,7 +28,18 @@ async function Page({ params }: { params: Promise<{ id: string }> }) {
         bio={userInfo.bio}
         />
     
-      <div className='mt-9'>
+      <div className='mt-5'>
+             <Link href='/profile/edit' className="max-2xl:hidden max-xl:hidden max-lg:hidden max-sm:block mb-5">
+                      <div className='flex cursor-pointer justify-center gap-3 rounded-lg bg-dark-3 px-4 py-4'>
+                        <Image
+                    src='/assets/edit.svg'
+                    alt='logout'
+                    width={16}
+                    height={16}
+                    />
+                        <p className='text-light-2  text-center'>Edit Profile</p>
+                      </div>
+                    </Link>
         <Tabs defaultValue='threads' className='w-full'>
     
           <TabsList className='tab'>
