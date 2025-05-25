@@ -15,7 +15,7 @@ function Topbar() {
         width={30} 
         height={30} />
         <p className="text-heading3-bold text-light-1 max-xs:hidden">
-                  Threads
+                  QuietVibes
         </p>
       </Link>
     <div className="max-w-xs mx-4 bg-dark-4 rounded-full " style={{minWidth:"50px", maxWidth:"300px", height:"auto"}}>
@@ -39,14 +39,7 @@ function Topbar() {
           </SignedIn>
         </div>
         <OrganizationSwitcher
-        
-          appearance={{
-            elements: {
-              organizationSwitcherTrigger: "py-2 px-4 w-12 h-12 bg-white ",
-              
-            },
-          }}
-        />
+                />
       </div>
     </nav>
   );

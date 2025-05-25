@@ -10,8 +10,8 @@ import Bottombar from '@/components/shared/Bottombar'
 const inter = Inter({ subsets: ['latin'] })
 
   export const metadata ={
-    title : "Threads",
-    description :"A Nextjs 13 Meta Threads Application BY MIHIR"
+    title : "QuietVibe",
+    description :"A Nextjs Social Media"
   }
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (

@@ -37,6 +37,9 @@ type Event = {
 export const POST = async (request: Request) => {
   const payload = await request.json();
   const header = await headers();
+  console.log("Received Clerk webhook payload:", payload);
+
+
 
   const heads = {
     "svix-id": header.get("svix-id"),
