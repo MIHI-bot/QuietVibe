@@ -15,7 +15,7 @@ async function Page({
   searchParams: { [key: string]: string | undefined };
 }) {
   const user = await currentUser();
-  if (!user) redirect("/sign-in");;
+  if (!user) redirect("/sign-in");
 
   const userInfo = await fetchUser(user.id);
   if (!userInfo?.onboarded) redirect("/onboarding");
@@ -42,7 +42,7 @@ async function Page({
           <>
             {result.communities.map((community) => (
               <CommunityCard
-                key={community._id}
+                key={community.id}
                 id={community.id}
                 name={community.name}
                 username={community.username}

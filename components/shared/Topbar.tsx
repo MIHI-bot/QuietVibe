@@ -22,17 +22,15 @@ async function Topbar() {
 
         
       </Link>
-    {/* <div className="max-w-xs mx-4 bg-dark-4 rounded-full " style={{minWidth:"50px", maxWidth:"300px", height:"auto"}}> */}
-                {/* <AnimatedTopics  /> */}
-       {/* </div> */}
+    <div className="max-w-xs mx-4 bg-dark-4 rounded-full " style={{minWidth:"50px", maxWidth:"300px", height:"auto"}}> 
+                <AnimatedTopics  />
+        </div>
        
       <div className="flex items-center gap-1 pr-2">
-         <div >
+         {/* <div >
         <OrganizationSwitcher/>
-        </div>
-                
-      
-       
+        </div> */}
+                      
           <ProfileImage image={userInfo.image} />
 
       </div>

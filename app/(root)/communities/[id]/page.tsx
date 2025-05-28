@@ -17,7 +17,7 @@ async function Page({ params }: { params: { id: string } }) {
   return (
     <section>
       <ProfileHeader
-        accountId={communityDetails.id}
+        accountId={communityDetails.createdBy.id}
         authUserId={user.id}
         name={communityDetails.name}
         username={communityDetails.username}
@@ -54,8 +54,8 @@ async function Page({ params }: { params: { id: string } }) {
             <section className="mt-9 flex flex-col gap-10">
               {communityDetails.members.map((member: any) => (
                 <UserCard
-                  key={member._id}
-                  id={member._id}
+                  key={member.id}
+                  id={member.id}
                   name={member.name}
                   username={member.username}
                   imgUrl={member.image}
