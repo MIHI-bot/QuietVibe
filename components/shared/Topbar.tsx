@@ -15,7 +15,7 @@ async function Topbar() {
     const userInfo = await fetchUser(user.id);
     if (!userInfo?.onboarded) redirect("/onboarding");
   return (
-    <nav className="topbar pl-2 pr-2">
+    <nav className="topbar pl-4 pr-4">
        
 <Link href="/" className="flex items-center">
   <Image src="/assets/lo.png" alt="logo" width={140} height={40} style={{ objectFit: 'contain' }} />

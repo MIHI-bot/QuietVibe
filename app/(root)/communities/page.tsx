@@ -29,7 +29,11 @@ async function Page({
 
   return (
     <>
-      <h1 className='head-text'>Communities</h1>
+
+      <h1 className='head-text text-light-1'>Communities Section is not available yet, it will be available in next update. <br/> <strong className="text-violet-500">THANK YOU !</strong></h1>
+
+
+      {/* <h1 className='head-text'>Communities</h1>
 
       <div className='mt-5'>
         <Searchbar routeType='communities' />
@@ -53,7 +57,7 @@ async function Page({
             ))}
           </>
         )}
-      </section>
+      </section> */}
 
     
     </>

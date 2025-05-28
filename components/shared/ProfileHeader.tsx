@@ -212,17 +212,17 @@ function ProfileHeader({
         </div>
         {accountId === authUserId && type !== "Community" && (
           <>
-          <Link href='/profile/edit' className="max-sm:hidden ">
-            <div className='flex cursor-pointer gap-3 rounded-lg bg-dark-3 px-4 py-2'>
+          {/* <Link href='/profile/edit' className="max-sm:block max-2xl:hidden max-xl:hidden max-lg:hidden">
+            <div className='flex cursor-pointer gap-3 rounded-lg bg-violet-700 px-4 py-2'>
               <Image
           src='/assets/edit.svg'
           alt='logout'
           width={16}
           height={16}
           />
-              <p className='text-light-2 max-sm:hidden'>Edit</p>
+              <p className='text-light-2 max-sm:hidden '>Edit</p>
             </div>
-          </Link>
+          </Link> */}
             <div className="block md:hidden">
           <SignedIn>
             <SignOutButton>
