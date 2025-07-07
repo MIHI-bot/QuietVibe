@@ -29,6 +29,14 @@ async function Page({ params }: { params: Promise<{ id: string }> }) {
         />
     
       <div className='mt-3'>
+
+
+
+
+
+
+
+        
              {/* <Link href='/profile/edit' className="bg-violet-700 max-2xl:hidden max-xl:hidden max-lg:hidden max-sm:block">
                       <div className='flex cursor-pointer justify-center gap-3 rounded-lg bg-violet-700 px-4 py-4'>
                         <Image
@@ -41,12 +49,22 @@ async function Page({ params }: { params: Promise<{ id: string }> }) {
                       </div>
                     </Link> */}
                     {/* <Link href='/profile/edit' className="max-2xl:hidden max-xl:hidden max-lg:hidden max-sm:block"> */}
-                    <Link href='/profile/edit' >
-  <div className='flex cursor-pointer justify-center gap-3 rounded-lg bg-violet-700 px-4 py-4'>
+                    {/* <Link href='/profile/edit' > */}
+  {/* <div className='flex cursor-pointer justify-center gap-3 rounded-lg bg-violet-700 px-4 py-4'>
     <Image src='/assets/edit.svg' alt='edit' width={16} height={16} />
     <p className='text-light-2 text-center'>Edit Profile</p>
-  </div>
-</Link>
+  </div> */}
+{/* </Link> */}
+
+
+
+
+
+
+
+
+
+
         <Tabs defaultValue='threads' className='w-full mt-4'>
     
           <TabsList className='tab'>
